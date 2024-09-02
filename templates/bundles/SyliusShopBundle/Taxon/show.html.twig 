@@ -1,0 +1,11 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+    <h1>{{ taxon.name }}</h1>
+    {% for banner in banners %}
+        <div class="banner">
+            <img src="{{ banner.image.path }}" alt="{{ banner.title }}">
+        </div>
+    {% endfor %}
+    {# Add the rest of your taxon page content here #}
+{% endblock %}
